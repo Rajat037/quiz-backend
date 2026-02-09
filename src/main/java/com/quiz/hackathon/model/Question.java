@@ -24,4 +24,13 @@ public class Question {
     private String optionD;
 
     private String correctOption;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getCorrectOption() {
+        return correctOption;
+    }
+
 }

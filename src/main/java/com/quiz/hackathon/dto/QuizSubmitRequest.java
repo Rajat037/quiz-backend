@@ -1,12 +1,16 @@
 package com.quiz.hackathon.dto;
 
-import lombok.Data;
 import java.util.Map;
 
-@Data
 public class QuizSubmitRequest {
-    private Long quizId;
 
-    // questionId -> selectedOption
     private Map<Long, String> answers;
+
+    public Map<Long, String> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(Map<Long, String> answers) {
+        this.answers = answers;
+    }
 }

@@ -1,11 +1,23 @@
 package com.quiz.hackathon.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
 public class QuizResult {
+
     private int score;
-    private int totalQuestions;
+    private int total;
+
+    public QuizResult() {
+    }
+
+    public QuizResult(int score, int total) {
+        this.score = score;
+        this.total = total;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public int getTotal() {
+        return total;
+    }
 }
